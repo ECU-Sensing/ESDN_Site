@@ -184,6 +184,14 @@ function initMap() {
       window.setTimeout(function() {infoWindow.close(map, marker);},5000);
     });
 
+    // Define Click Event
+    coverage_circle.addListener('click',function() {
+      var pos = map.getZoom();
+      map.setZoom(12);
+      map.setCenter(marker.getPosition());
+      window.setTimeout(function() {map.setZoom(pos);},5000);
+    });
+
     // Add Marker to Markers array
     markers.push(marker);
   };
