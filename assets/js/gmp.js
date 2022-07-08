@@ -48,7 +48,7 @@ const esdn_map = {
       name: "East Carolina University - Brody School of Medicine",
       loc: { lat: 35.609626, lng:  -77.402157 },
       coverage_area: 8046.72,
-      status: 1,
+      status: 2,
     },
     seagull: {
       name: "YMCA - Camp Seagull & Camp Seafarer",
