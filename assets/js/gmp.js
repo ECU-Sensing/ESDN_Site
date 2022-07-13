@@ -75,37 +75,37 @@ const esdn_map = {
       status: 1,
     },
     cope1: {
-      name: "COPE Project Footprint - Greenville",
+      name: "Greenville Water Treatment",
       loc:  { lat: 35.609643, lng: -77.305522 },
       coverage_area: 8046.72,
       status: 1,
     },
     cope2: {
-      name: "COPE Project Footprint - Grimesland",
+      name: "Grimesland",
       loc:  { lat: 35.563930, lng: -77.180505 },
       coverage_area: 8046.72,
       status: 1,
     },
     cope3: {
-      name: "COPE Project Footprint - Goose Creek State Park",
+      name: "Goose Creek State Park",
       loc:  { lat: 35.473107, lng: -76.907259 },
       coverage_area: 8046.72,
       status: 1,
     },
     cope4: {
-      name: "COPE Project Footprint - Little Washington",
+      name: "Little Washington",
       loc:  { lat: 35.547725, lng: -77.046222 },
       coverage_area: 8046.72,
       status: 1,
     },
     cope5: {
-      name: "COPE Project Footprint - Bath",
+      name: "Bath",
       loc:  { lat: 35.428098, lng: -76.740445 },
       coverage_area: 8046.72,
       status: 1,
     },
     cope6: {
-      name: "COPE Project Footprint - Swan Quarter",
+      name: "Swan Quarter",
       loc:  { lat: 35.405544, lng: -76.329505},
       coverage_area: 8046.72,
       status: 1,
@@ -154,7 +154,7 @@ function initMap() {
       const content =  '<strong><u>' + esdn_map[point].name + '</strong></u>' + '<br>Status: '+ states[esdn_map[point].status].text + '<br>Latitude: ' + esdn_map[point].loc.lat + '<br>Longitude: ' + esdn_map[point].loc.lng ;
       infoWindow.setContent(content);
       infoWindow.open(map, marker);
-      window.setTimeout(function() {infoWindow.close(map, marker);},5000);
+      window.setTimeout(function() {infoWindow.close(map, marker);},10000);
     });
 
     // Define Click Event
@@ -162,7 +162,7 @@ function initMap() {
       var pos = map.getZoom();
       map.setZoom(12);
       map.setCenter(marker.getPosition());
-      window.setTimeout(function() {map.setZoom(pos);},5000);
+      window.setTimeout(function() {map.setZoom(pos);},10000);
     });
 
     // Define Coverage Circle
@@ -181,7 +181,7 @@ function initMap() {
       const content =  '<strong><u>' + esdn_map[point].name + '</strong></u>' + '<br>Status: '+ states[esdn_map[point].status].text + '<br>Latitude: ' + esdn_map[point].loc.lat + '<br>Longitude: ' + esdn_map[point].loc.lng ;
       infoWindow.setContent(content);
       infoWindow.open(map, marker);
-      window.setTimeout(function() {infoWindow.close(map, marker);},5000);
+      window.setTimeout(function() {infoWindow.close(map, marker);},10000);
     });
 
     // Define Click Event
@@ -189,15 +189,7 @@ function initMap() {
       var pos = map.getZoom();
       map.setZoom(12);
       map.setCenter(marker.getPosition());
-      window.setTimeout(function() {map.setZoom(pos);},5000);
-    });
-
-    // Define Click Event
-    map.addListener('click',function() {
-      const content = "Your area is not currently in our coverage area.<br>Would you like to submit a request for us to serve you? " ;
-      infoWindow.setContent(content);
-      infoWindow.open(map, marker);
-      window.setTimeout(function() {infoWindow.close(map, marker);},5000);
+      window.setTimeout(function() {map.setZoom(pos);},10000);
     });
 
     // Add Marker to Markers array
@@ -207,6 +199,7 @@ function initMap() {
   // Batch Marker manager
   new MarkerClusterer({markers,map})
 }
+
 
 // Display Map
 window.initMap = initMap;
