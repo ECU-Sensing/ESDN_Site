@@ -17,21 +17,25 @@ const states = [
   {
     text: "Planned",
     icon: "assets/icons/icon_tower_alt_planned.png",
+    icon: "assets/icons/google_cell_tower.svg",
     color: "#FED01A",
   },
   {
     text: "Planned",
     icon: "assets/icons/icon_tower_alt_staged.png",
+    icon: "assets/icons/google_cell_tower.svg",
     color: "#0096FD"
   },
   {
     text: "Active",
     icon: "assets/icons/icon_tower_alt_active.png",
+    icon: "assets/icons/google_cell_tower.svg",
     color: esdn_color,
   },
   {
     text: "Archived",
     icon: "assets/icons/icon_tower_alt_archived.png",
+    icon: "assets/icons/google_cell_tower.svg",
     color: "FD0000",
   }
 ]
