@@ -149,7 +149,7 @@ function initMap() {
     // Define Marker 
     const marker = new google.maps.Marker({
         position: esdn_map[point].loc,
-        icon: states[esdn_map[point].status].icon,
+        //icon: states[esdn_map[point].status].icon,
         map: map,
     });
 
