@@ -18,24 +18,28 @@ const states = [
     text: "Planned",
     icon: "assets/icons/icon_tower_alt_planned.png",
     icon: "assets/icons/google_cell_tower.svg",
+    icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
     color: "#FED01A",
   },
   {
     text: "Planned",
     icon: "assets/icons/icon_tower_alt_staged.png",
     icon: "assets/icons/google_cell_tower.svg",
+    icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
     color: "#0096FD"
   },
   {
     text: "Active",
     icon: "assets/icons/icon_tower_alt_active.png",
     icon: "assets/icons/google_cell_tower.svg",
+    icon: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png",
     color: esdn_color,
   },
   {
     text: "Archived",
     icon: "assets/icons/icon_tower_alt_archived.png",
     icon: "assets/icons/google_cell_tower.svg",
+    icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
     color: "FD0000",
   }
 ]
@@ -150,6 +154,7 @@ function initMap() {
     const marker = new google.maps.Marker({
         position: esdn_map[point].loc,
         //icon: states[esdn_map[point].status].icon,
+        icon: states[esdn_map[point].status].icon,
         map: map,
     });
 
