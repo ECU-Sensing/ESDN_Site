@@ -16,29 +16,21 @@ const ecu_info = {
 const states = [
   {
     text: "Planned",
-    icon: "assets/icons/icon_tower_alt_planned.png",
-    icon: "assets/icons/google_cell_tower.svg",
     icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
     color: "#FED01A",
   },
   {
     text: "Planned",
-    icon: "assets/icons/icon_tower_alt_staged.png",
-    icon: "assets/icons/google_cell_tower.svg",
     icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
     color: "#0096FD"
   },
   {
     text: "Active",
-    icon: "assets/icons/icon_tower_alt_active.png",
-    icon: "assets/icons/google_cell_tower.svg",
     icon: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png",
     color: esdn_color,
   },
   {
     text: "Archived",
-    icon: "assets/icons/icon_tower_alt_archived.png",
-    icon: "assets/icons/google_cell_tower.svg",
     icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
     color: "FD0000",
   }
@@ -121,6 +113,21 @@ const esdn_map = {
 
 };
 
+function placeMarkerAndPanTo(latLng, map) {
+  // Default InfoWindow for each Marker
+  var info = new google.maps.InfoWindow({
+    content: "Location:" + latLng,
+    disableAutoPan: true,
+  });
+ 
+  var marker = new google.maps.Marker({
+    position: latLng,
+    map: map,
+  });
+
+  map.panTo(latLng);
+  info.open(map, marker );
+}
 
 
 // Initialize and add the map
@@ -150,14 +157,13 @@ function initMap() {
   // Marker creation for entire dictionary
   for (let point in esdn_map) {
     
-    // Define Marker 
+    // Define Marker
     const marker = new google.maps.Marker({
         position: esdn_map[point].loc,
-        //icon: states[esdn_map[point].status].icon,
         icon: states[esdn_map[point].status].icon,
         map: map,
     });
-
+    
     // Define Mouseover Event
     marker.addListener("mouseover", () =>{
       const content =  '<strong><u>' + esdn_map[point].name + '</strong></u>' + '<br>Status: '+ states[esdn_map[point].status].text + '<br>Latitude: ' + esdn_map[point].loc.lat + '<br>Longitude: ' + esdn_map[point].loc.lng ;
