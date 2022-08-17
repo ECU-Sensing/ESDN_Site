@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+		<link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.theme.default.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script type="module" src="assets/js/gmp.js"></script>
 	</head>
@@ -38,87 +40,86 @@
 				</section>
 				
 				<!-- News -->
-				<section class="wrapper style2 align-center" id= "projects">
+				<section class="wrapper style2 align-center" id= "news">
 					<div class="inner align-center">
-						<h1>News</h1>
-						<section class="wrapper style2 align-center" id="projects">
-							<div class="row row-cols-1 row-cols-md-3 g-4">
-								<div class="col align-self-center ">
-									<div class="card">
-										<img src="images/news/cope_first_prod.jpg" class="card-img-top">
-										<div class="card-body">
-										<h4 class="card-title"><strong>Production deployment of CoPE Starts</strong></h4>
-										<p class="card-text">Today we setup the first production sensing node for the Coastal and People  (CoPE 2021) NSF project led by the <a href="https://water.ecu.edu/">Water Resources Center</a>. The node is solar powered and connects a Hydros 21 water level sensor to the ESDN data collection and visualization infrastructure. The power plant and the LoRaWAN communications shim integration was tested in the ESDN labs and it is the result of the collaboration with the Water Resources Center.
-											<br><br>This first iteration of the node features a modular design with discrete components encased and interconnected. This approach facilitates troubleshooting and future design optimizations.
-											<br><br>We are excited to see the CoPE project move into production and look forward to the deployment of a string of gateways and a significant number of nodes in the near future."</p>
-									</div>
-										<div class="card-footer">
-											<small class="text-muted">August 10th, 2022</small>
-										</div>
+						<h1>News</h1>					
+						<div class="owl-carousel owl-theme">
+							<div class="item" style="height:150vh; overflow-y:auto;">
+								<div class="card">
+									<img src="images/news/cope_first_prod.jpg" alt="Cope Project Install" class="card-img-top">
+									<div class="card-body">
+									<h4 class="card-title"><strong>Production deployment of CoPE Starts</strong></h4>
+									<p class="card-text">Today we setup the first production sensing node for the Coastal and People  (CoPE 2021) NSF project led by the <a href="https://water.ecu.edu/">Water Resources Center</a>. The node is solar powered and connects a Hydros 21 water level sensor to the ESDN data collection and visualization infrastructure. The power plant and the LoRaWAN communications shim integration was tested in the ESDN labs and it is the result of the collaboration with the Water Resources Center.
+										<br><br>This first iteration of the node features a modular design with discrete components encased and interconnected. This approach facilitates troubleshooting and future design optimizations.
+										<br><br>We are excited to see the CoPE project move into production and look forward to the deployment of a string of gateways and a significant number of nodes in the near future."</p>
+								</div>
+									<div class="card-footer">
+										<small class="text-muted">August 10th, 2022</small>
 									</div>
 								</div>
-								<div class="col align-self-center">
-									<div class="card">
-										<img src="images/news/ecu_coverage.PNG" class="card-img-top">
-										<div class="card-body">
-										<h4 class="card-title"><strong>ESDN is Live!</strong></h4>
-										<p class="card-text">We are excited to announce that the Environmental Sensing Data Network (ESDN) is now operational and onboarding projects. With two gateways covering the Main and Medical campuses, ESDN enables educators and researchers to easily deploy sensors in support of their work. We will soon organize a set of seminars to provide more information about way to leverage ESDN but in the meantime, feel free to contact us with questions. We are excited about the great projects who already signed up for our infrastructure and about the projects that will soon follow.</p>
-									</div>
-										<div class="card-footer">
-											<small class="text-muted">August 8th, 2022</small>
-										</div>
+							</div>
+							<div class="item" style="height:150vh; overflow-y:auto;">
+								<div class="card">
+									<img src="images/news/ecu_coverage.PNG" alt="ESDN Coverage Map" class="card-img-top">
+									<div class="card-body">
+									<h4 class="card-title"><strong>ESDN is Live!</strong></h4>
+									<p class="card-text">We are excited to announce that the Environmental Sensing Data Network (ESDN) is now operational and onboarding projects. With two gateways covering the Main and Medical campuses, ESDN enables educators and researchers to easily deploy sensors in support of their work. We will soon organize a set of seminars to provide more information about way to leverage ESDN but in the meantime, feel free to contact us with questions. We are excited about the great projects who already signed up for our infrastructure and about the projects that will soon follow.</p>
+								</div>
+									<div class="card-footer">
+										<small class="text-muted">August 8th, 2022</small>
 									</div>
 								</div>
-								<div class="col align-self-center">
-									<div class="card">
-										<img src="images/news/lora_alliance.jpg" class="card-img-top">
-										<div class="card-body">
-										<h4 class="card-title"><strong>Joined LoRa Alliance</strong></h4>
-										<p class="card-text">We are excited to announce that the Center for IOT Engineering and Innovation was accepted as an institutional member of the LoRa Alliance; an open, non-profit worldwide organization supporting and promoting the adoption of LoRaWAN</p>
-										<a href="https://lora-alliance.org/" class="btn btn-primary">Learn More</a>
-									</div>
-										<div class="card-footer">
-											<small class="text-muted">July 28th, 2022</small>
-										</div>
+							</div>
+							<div class="item" style="height:150vh; overflow-y:auto;">
+								<div class="card">
+									<img src="images/news/lora_alliance.jpg" alt="LoRa Alliance Banner" class="card-img-top">
+									<div class="card-body">
+									<h4 class="card-title"><strong>Joined LoRa Alliance</strong></h4>
+									<p class="card-text">We are excited to announce that the Center for IOT Engineering and Innovation was accepted as an institutional member of the LoRa Alliance; an open, non-profit worldwide organization supporting and promoting the adoption of LoRaWAN</p>
+									<a href="https://lora-alliance.org/" class="btn btn-primary">Learn More</a>
+								</div>
+									<div class="card-footer">
+										<small class="text-muted">July 28th, 2022</small>
 									</div>
 								</div>
-								<div class="col align-self-center">
-									<div class="card">
-										<img src="images/news/seagull_install.jpg" class="card-img-top" alt="...">
-										<div class="card-body">
-										<h4 class="card-title"><strong>Camp Seagull Gateway Installed</strong></h4>
-										<p class="card-text"> A new gateway has been installed at the YMCA Camp Seagull. Enabling many research teams along the Neuse River to harness to the power of ESDN.</p>
-										</div>
-										<div class="card-footer">
-											<small class="text-muted">July 6th, 2022</small>
-										</div>
+							</div>
+							<div class="item" style="height:150vh; overflow-y:auto;">
+								<div class="card">
+									<img src="images/news/seagull_install.jpg" alt="Camp Seagull Gateway" class="card-img-top" alt="...">
+									<div class="card-body">
+									<h4 class="card-title"><strong>Camp Seagull Gateway Installed</strong></h4>
+									<p class="card-text"> A new gateway has been installed at the YMCA Camp Seagull. Enabling many research teams along the Neuse River to harness to the power of ESDN.</p>
+									</div>
+									<div class="card-footer">
+										<small class="text-muted">July 6th, 2022</small>
 									</div>
 								</div>
-								<div class="col">
-									<div class="card">
-									  <img src="images/news/lake-mm-first.jpg" class="card-img-top" alt="...">
-									  <div class="card-body">
+							</div>
+							<div class="item" style="height:150vh; overflow-y:auto;">
+								<div class="card">
+									<img src="images/news/lake-mm-first.jpg" alt="Lake Mattamuskeet Testing" class="card-img-top" alt="...">
+									<div class="card-body">
 										<h4 class="card-title"><strong>Travel to Lake Mattamuskeet</strong></h4>
 										<p class="card-text">The team traveled south to Lake Mattamuskeet to install and test the first round of integrated tipping-bucket rain sensors.</p>
-									  </div>
-									  <div class="card-footer">
+									</div>
+									<div class="card-footer">
 										<small class="text-muted">May 23rd, 2022</small>
 									</div>
-									</div>
 								</div>
-								<div class="col">
-									<div class="card">
-									  <img src="images/news/first_test.jpg" class="card-img-top" alt="width:250px;">
-									  <div class="card-body">
-										<h4 class="card-title"><strong>Field Testing Begins!</strong></h4>
+							</div>
+							<div class="item" style="height:150vh; overflow-y:auto;">
+								<div class="card">
+									<img src="images/news/first_test.jpg" alt="First Testing Node deployed" class="card-img-top">
+									<div class="card-body">
+										<h4 class="card-title"><strong>Field Testing Begins</strong></h4>
 										<p class="card-text"> The first wave of testing has begun. Sensor have been deployed 4000ft from the first gateway! </p>
-									  </div>
-									  <div class="card-footer">
-										  <small class="text-muted">March 24th, 2022</small>
-									  </div>
+									</div>
+									<div class="card-footer">
+										<small class="text-muted">March 24th, 2022</small>
 									</div>
 								</div>
-								<div class="col align-self-center">
+							</div>
+							<div class="item" style="height:150vh; overflow-y:auto;">
 								<div class="card">
 									<img src="images/gateway.jpg" class="card-img-top" alt="...">
 									<div class="card-body">
@@ -129,22 +130,10 @@
 										<small class="text-muted">March 7th, 2022</small>
 									</div>
 								</div>
-								</div>
 							</div>
-								
-								<!--
-								<div class="col">
-								  <div class="card">
-									<img src="..." class="card-img-top" alt="...">
-									<div class="card-body">
-									  <h5 class="card-title">Card title</h5>
-									  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-									</div>
-								  </div>
-								</div>
-							  </div> -->
-						</section>
+						</div>
 					</div>
+				</section>
 				</section>
 				<!-- Navigation Menu -->
 				<section class="wrapper style1 align-center">
@@ -419,7 +408,10 @@ o	Air Quality Monitoring - Sinan Sousan (PI), PYoo Min Park (PI)
 			<script src="assets/js/components.js"></script>
 			<script src ="assets/js/scroll.js"></script>
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdi64dltyurMzy_QJWr_kwBGOvZ1-ShK4&callback=initMap&v=weekly" defer></script>
-
+			<script src="assets/js/news.js"></script>
+			<script src="/node_modules/jquery/dist/jquery.js"></script>
+			<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+			<script src="/node_modules/owl.carousel/dist/owl.theme.default.min.css"></script>
 
 	</body>
 </html>

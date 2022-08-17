@@ -1,0 +1,20 @@
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        autoHeight:true,
+        loop:false,
+        rewind:true,
+        margin:20,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:2,
+            },
+            1000:{
+                items:3,
+            }
+        }
+    });
+});
