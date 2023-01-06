@@ -66,7 +66,7 @@ const esdn_map = {
       name: "East Carolina University - Costal Studies Institute",
       loc:  { lat: 35.873228, lng: -75.661204 },
       coverage_area: 8046.72,
-      status: 1,
+      status: 2,
     },
     wrc: {
       name: "East Carolina University - West Research Campus",
