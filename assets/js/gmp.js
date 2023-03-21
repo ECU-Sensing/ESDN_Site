@@ -37,79 +37,80 @@ const states = [
 ]
 
 // ESDN Map Location Dictionary
+// ESDN Map Location Dictionary
 const esdn_map = {
-    scitech: { 
-      name: "East Carolina University - Science and Technology Bldg",
-      loc:  { lat: 35.605124, lng:  -77.365271 },
-      coverage_area: 8046.72,
-      status: 2,
-    },
-    brody: {
-      name: "East Carolina University - Brody School of Medicine",
-      loc: { lat: 35.609626, lng:  -77.402157 },
-      coverage_area: 8046.72,
-      status: 2,
-    },
-    seagull: {
-      name: "YMCA - Camp Seagull & Camp Seafarer",
-      loc:  { lat: 34.994108, lng: -76.854844 },
-      coverage_area: 8046.72,
-      status: 2,
-    },
-    mattamuskeet: {
-      name: "Lake Mattamuskeet",
-      loc:  { lat: 35.451608, lng: -76.176196 },
-      coverage_area: 8046.72,
-      status: 1,
-    },
-    csi: {
-      name: "East Carolina University - Costal Studies Institute",
-      loc:  { lat: 35.873228, lng: -75.661204 },
-      coverage_area: 8046.72,
-      status: 2,
-    },
-    wrc: {
-      name: "East Carolina University - West Research Campus",
-      loc:  { lat: 35.632030, lng: -77.493024 },
-      coverage_area: 8046.72,
-      status: 1,
-    },
-    cope1: {
-      name: "Greenville Water Treatment",
-      loc:  { lat: 35.609643, lng: -77.305522 },
-      coverage_area: 8046.72,
-      status: 1,
-    },
-    cope2: {
-      name: "Grimesland",
-      loc:  { lat: 35.563930, lng: -77.180505 },
-      coverage_area: 8046.72,
-      status: 1,
-    },
-    cope3: {
-      name: "Goose Creek State Park",
-      loc:  { lat: 35.473107, lng: -76.907259 },
-      coverage_area: 8046.72,
-      status: 1,
-    },
-    cope4: {
-      name: "Little Washington",
-      loc:  { lat: 35.547725, lng: -77.046222 },
-      coverage_area: 8046.72,
-      status: 1,
-    },
-    cope5: {
-      name: "Bath",
-      loc:  { lat: 35.428098, lng: -76.740445 },
-      coverage_area: 8046.72,
-      status: 1,
-    },
-    cope6: {
-      name: "Swan Quarter",
-      loc:  { lat: 35.405544, lng: -76.329505},
-      coverage_area: 8046.72,
-      status: 1,
-    },
+  scitech: { 
+    name: "East Carolina University - Science and Technology Bldg",
+    loc:  { lat: 35.605124, lng:  -77.365271 },
+    coverage_area: 8046.72,
+    status: 2,
+  },
+  brody: {
+    name: "East Carolina University - Brody School of Medicine",
+    loc: { lat: 35.609626, lng:  -77.402157 },
+    coverage_area: 8046.72,
+    status: 2,
+  },
+  seagull: {
+    name: "YMCA - Camp Seagull & Camp Seafarer",
+    loc:  { lat: 34.994108, lng: -76.854844 },
+    coverage_area: 8046.72,
+    status: 2,
+  },
+  mattamuskeet: {
+    name: "Lake Mattamuskeet",
+    loc:  { lat: 35.451608, lng: -76.176196 },
+    coverage_area: 8046.72,
+    status: 1,
+  },
+  csi: {
+    name: "East Carolina University - Costal Studies Institute",
+    loc:  { lat: 35.873228, lng: -75.661204 },
+    coverage_area: 23335.49,
+    status: 2,
+  },
+  wrc: {
+    name: "East Carolina University - West Research Campus",
+    loc:  { lat: 35.632030, lng: -77.493024 },
+    coverage_area: 8046.72,
+    status: 1,
+  },
+  cope1: {
+    name: "Greenville Water Treatment",
+    loc:  { lat: 35.609643, lng: -77.305522 },
+    coverage_area: 8046.72,
+    status: 1,
+  },
+  cope2: {
+    name: "Grimesland",
+    loc:  { lat: 35.563930, lng: -77.180505 },
+    coverage_area: 8046.72,
+    status: 1,
+  },
+  cope3: {
+    name: "Goose Creek State Park",
+    loc:  { lat: 35.473107, lng: -76.907259 },
+    coverage_area: 8046.72,
+    status: 1,
+  },
+  cope4: {
+    name: "Washington",
+    loc:  { lat: 35.540211574992895, lng: -77.05438510962685},
+    coverage_area: 8046.72,
+    status: 2,
+  },
+  cope5: {
+    name: "Bath",
+    loc:  { lat: 35.428098, lng: -76.740445 },
+    coverage_area: 8046.72,
+    status: 1,
+  },
+  cope6: {
+    name: "Swan Quarter",
+    loc:  { lat: 35.405544, lng: -76.329505},
+    coverage_area: 8046.72,
+    status: 1,
+  },
 
 };
 
